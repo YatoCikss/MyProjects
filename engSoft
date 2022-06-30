@@ -1,0 +1,34 @@
+class aluno:
+    def __init__(self, nome, idade, campus, curso):
+        self.nome = nome
+        self.idade = idade
+        self.campus = campus
+        self.curso = curso
+        pass
+
+    def salvar(self):
+        self.estrutura = {"nome":self.nome,"idade":self.idade, "campus":self.campus, "curso":self.curso}
+        pass
+
+    def imprimir(self):
+        print(F"nome: {self.estrutura['nome']}")
+        print(F"idade: {self.estrutura['idade']}")
+        print(F"campus: {self.estrutura['campus']}")
+        print(F"curso: {self.estrutura['curso']}")
+        pass
+    pass
+
+alu = aluno("chris",21,"caxias","ciência da computação")
+alu.salvar()
+alu.imprimir()
+
+#programa para entrar com dados e gravar em estruturas
+# receber dados de usuarios (nome, idades, campus, curso)
+
+# nome: christopher
+# idade: 21
+# campus: caxias
+# curso: cc7
+
+# gravar em uma estrutura dea dados
+# aplicar padrão de template method armazenar em fontes de dados (txt, binario, csv)
